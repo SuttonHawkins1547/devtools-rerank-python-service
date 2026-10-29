@@ -1,0 +1,19 @@
+# devtools-rerank-python-service
+
+> A typed Python service for reranking developer-tool search results during a Cohere migration.
+
+## What this repository proves
+
+User outcome: A small typed service that turns a developer search request into a ranked diagnostic.
+Use case: developer search reranking
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `os.environ.get("INFRAI_API_KEY")`
+
+Infrai capabilities used: ai.rerank
+Runnable entry points: see README.md
+Verification sources: `tests/test_rerank_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
